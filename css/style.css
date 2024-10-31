@@ -1,0 +1,331 @@
+.quiz{
+
+   position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255, 1); /* Black background with opacity */
+    z-index:9999; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-color: lightgrey;
+    border-radius: 1px;
+    border-style: solid;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.chart-container{
+    position: relative;
+    height:20vh;
+    width:40vw;
+    min-height: 320px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.solutionInstruction{
+
+    text-align: center;
+}
+
+.lbdisplayheader{
+    list-style-type: none;
+    background-color: lightblue;
+    width:320px;
+    padding: 10px;
+    margin: 1px auto auto;
+    text-align: left
+}
+
+.lbdisplayheader li{
+
+    display: inline-flex;
+    padding: 5px;
+    color:white;
+    width: 33%;
+
+}
+.lbdisplay{
+    list-style-type: none;
+
+    width:320px;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+
+    border-width:0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: lightblue;
+}
+
+
+.lbdisplay li{
+
+    display: inline-flex;
+    padding: 5px;
+    color:lightblue;
+    width: 33%
+
+
+}
+
+.final ul{
+    list-style-type: none;
+}
+.final li{
+    display: inline-flex;
+    background-color:white ;
+    padding: 10px;
+    margin: 3px;
+    color: lightblue;
+    font-weight: 300px;
+
+}
+
+.final .active{
+    background-color: lightblue;
+    color: white;
+}
+.hiddenID{
+    display:none;
+}
+#result li{
+
+color: white;
+
+margin: 1px;
+margin-left: auto;
+margin-right: auto;
+display: inline-grid;
+
+}
+
+.resultSections_score{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+}
+.resultSections_correct{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+.resultSections_incorrect{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.resultSections_notattempted{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+.scoreDisplay{
+    font-size: 40px;
+}
+#result{
+    padding-left: 0px;
+}
+.nav{
+
+    display: none;
+}
+.questnav{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    margin-top:10px;
+    display: inline-flex;
+    width: 100%;
+
+}
+
+
+.questcontent{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    background-color:white;
+}
+.option{
+    height: 15%;
+    padding: 10px;
+    margin:5px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 240px;
+    max-width:460px;
+
+    border:1px;
+    border-radius: 1px;
+    border-color:lightblue;
+    border-style:solid;
+    text-align: center;
+
+}
+
+.option:hover{
+    background-color: lightblue;
+    }
+
+.insideQuest{
+    margin: 5px;
+}
+
+.attempted{
+    background-color: lightblue;
+    color:white;
+}
+
+.question{
+      padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 80%;
+    min-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 100px;
+
+}
+#startQuizBtn{
+    background-color: lightblue;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+#next{
+    background-color: lightblue;
+
+    margin-left: auto;
+    }
+
+    #close{
+    background-color: red;
+    float:right;
+    color: white;
+
+    }
+#prev{
+    background-color: lightblue;
+
+    }
+#finish{
+    background-color: lightblue;
+
+    }
+.showprogress{
+    font-size: 1rem;
+    color: lightblue;
+}
+.hideprogress{
+    font-size: 1rem;
+    color: lightgrey;
+}
+
+button{
+    padding:10px 24px;
+        border: none;
+    border-radius: 0px;
+}
+
+.progress{
+
+    padding:10px;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: lightgrey;
+    box-shadow: 1px;
+    background: white
+    margin-bottom:15%;
+}
+
+.progressBtn{
+    border-radius: 100%;
+    border-style:solid;
+    padding: 8px 15px;
+
+
+
+
+}
+
+.holder{
+
+    margin: 5px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+.holderUnattempted{
+
+    margin: 5px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+.holderupdated{
+
+    margin: 5px;
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+}
+
+.next{
+    margin-left: auto;
+}
+.finish{
+    margin-left: auto;
+}
+
+
+.correctflag{
+
+    margin: 5px;
+    text-align: center;
+    background-color: lightgreen;
+    color: white;
+
+}
+.wrongflag{
+
+    margin: 5px;
+    text-align: center;
+    background-color: red;
+    color: white;
+
+}
+
+.correct{
+    background-color: lightgreen;
+    color:white;
+}
+.incorrect{
+    background-color: red;
+    color:white;
+}
+
+.hide{
+    display: none;
+}
+.current{
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
